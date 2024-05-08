@@ -1,0 +1,30 @@
+// Media Query
+@mixin device($device) {
+  @if $device == tablet {
+    @media (min-width: 43.75rem) {
+      @content;
+    }
+  }  
+  @else if $device == desktop {
+    @media (min-width: 75rem) {
+      @content;
+    }
+  }
+}
+
+// Colors
+$color1: #FFFFFF;
+$color2: #ECF2F8;
+$color3: #48556A;
+$color4: #19202D;
+$color5: #733FC8; 
+
+
+//Typography
+$fonts: (
+  "$small": 0.6875rem,
+  "$medium": 0.8125rem,
+  "$large": 1.25rem,
+);
+
+
